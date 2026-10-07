@@ -2,8 +2,9 @@ name: Crawl menus
 
 on:
   schedule:
-    # Every Friday 23:05 KST (14:05 UTC)
-    - cron: '5 14 * * 5'
+    # Every Friday 22:05 KST
+    - cron: '5 22 * * 5'
+      timezone: 'Asia/Seoul'
   workflow_dispatch:
 
 jobs:
